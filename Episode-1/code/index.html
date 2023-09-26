@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Series</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+
+    <!--HTML Hello World-->
+    <!--<div id="root">
+        <h1>Hello World from HTML</h1>
+    </div>-->
+
+    <div> Hello I'm above root--React isn't working here  </div>
+    <div id="root">
+        I am already here -- this won't be shown in browser(see notes)
+    </div>
+    <h2>I am below the root--React isn't working here</h2>
+
+    <!--React Hello World--> <!--It should be imported before using React-->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+ 
+    <!--React code in app.js-->
+    <script src="app.js"></script>
+    <!--<script>
+        const heading=React.createElement("h1",{},"Hello World from React"); // "element","object that takes attribute in k-v pair","child"
+        const root=ReactDOM.createRoot(document.getElementById("root"));
+        root.render(heading); //render replaces everything in root 
+    </script>
+-->
+    
+    <!--JS Hello World-->
+<!--<script>
+        const heading=document.createElement("h1") //element (h1) creation
+        heading.innerHTML="Hello World from JS" //content in that element
+        const root=document.getElementById("root"); //finds element with id root
+        root.appendChild(heading); //injects heading into root
+    </script>-->
+    
+    
+</body>
+</html>
