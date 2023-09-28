@@ -34,7 +34,16 @@ create-react-app uses webpack and babel.
 >>> npm install -D parcel 
 --D is dev dependancies
 
-dev dependancy vs normal dependancy 
+What is difference between 'depandencies' and 'devDependencies'?
+-  Dependencies:-
+    When we install any packages without any keywords then by default all the packages is created inside dependencies.
+    These type of dependencies is running in both Development and Production Environment.
+    ex:- npm i react
+
+   DevDependencies:-
+     When we install packages with keyword -D then all the packages is created inside devDependencies.
+     These type of dependencies is only accessable in Development Environment.
+     ex:- npm i -D parcel
 
 package-lock.json and node_modules is added. 
 package-lock.json keeps record of every version of the dependancies. 
@@ -93,7 +102,10 @@ For Prod build
  >>> npx parcel build index.html
  -gives error
  -we have main:"app.js" in package.json -> remove this
- - now , it does a lot of things, minify and compress our file. Parcel will build all the production files to dist folder- everything comes from .parcel-cache and dist folder
+ - now , it does a lot of things, minify and compress our file. Parcel will build all the production files to dist folder
+ - everything comes from .parcel-cache and dist folder
+ - `dist` folder is responsible for sending data to server means that data present on localhost server
+     is rendering from this `dist` folder.
 
 --.parcel-cache and dist folder can be regenerated -> so put in .gitignore
 
