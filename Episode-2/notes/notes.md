@@ -109,10 +109,20 @@ For Prod build
 
 --.parcel-cache and dist folder can be regenerated -> so put in .gitignore
 
+
+
 BrowsersList 
 -There is a package called 'browserlist' and Parcel automatically gives it to us.
 -Browserlist makes our code compatible for a lot of browsers.
 -we can add 'browserslist':[ , , ] in package.json
+
+Polyfill
+- to make older browsers understand our new code, the new code is converted to a older code which browser can understand called pollyfill.
+- babel do this conversion automatically
+eg. ES6 is the newer version of Javascript. 
+    If I'm working on 1999 browser, my browser will not understand what is 'const', 'newPromise' etc. 
+    So, there is a replacement code for these functionalities which is compatible with older version of browsers. 
+- So, this is what happens when we write "browserlist" -> our code gets converted to older version.
 
 
 
